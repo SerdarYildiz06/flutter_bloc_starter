@@ -1,0 +1,22 @@
+enum FormStatus {
+  pure,
+  valid,
+  invalid,
+  notANumber,
+  notMatchPasswords,
+  submissionInProgress,
+  submissionSuccess,
+  submissionFailure,
+  submissionCanceled,
+  wrongAuthentication,
+
+  moduleAddRequested,
+  moduleAddFinished,
+  moduleAlreadyPresented,
+  moduleAddInProgress,
+  moduleAreFetching,
+  moduleStartFetching,
+  moduleFetchingFailed,
+  moduleAreFetched,
+  moduleDetailPage,
+}
