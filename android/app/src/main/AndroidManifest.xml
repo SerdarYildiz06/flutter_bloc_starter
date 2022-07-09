@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bikoin_flutter">
+    package="com.example.flutter_bloc_starter">
    <application
-        android:label="bikoin_flutter"
+        android:label="flutter_bloc_starter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

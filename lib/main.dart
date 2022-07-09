@@ -4,8 +4,6 @@ import 'package:flutter_bloc_login_example/hive/log/log.dart';
 import 'package:flutter_bloc_login_example/hive/user/user.dart';
 import 'package:flutter_bloc_login_example/repositories/authentication_repository.dart';
 import 'package:flutter_bloc_login_example/repositories/user_repository.dart';
-import 'package:flutter_bloc_login_example/util/log/bloc_observer.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'app.dart';
 
@@ -22,14 +20,13 @@ import 'app.dart';
 void main() async {
   initHive().whenComplete(() => BlocOverrides.runZoned(
         () {
-      runApp(App(
-        authenticationRepository: AuthenticationRepository(),
-        userRepository: UserRepository(),
-
+          runApp(App(
+            authenticationRepository: AuthenticationRepository(),
+            userRepository: UserRepository(),
+          ));
+        },
+        //blocObserver: MyBlocObserver(),
       ));
-    },
-    //blocObserver: MyBlocObserver(),
-  ));
 }
 
 Future initHive() async {

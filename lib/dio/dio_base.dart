@@ -14,8 +14,6 @@ class DioBase with UserApi {
   Dio? getDio() {
     if (_dio == null) {
       _dio = Dio();
-     // _dio!.options.baseUrl = "https://iot.teladasdlme.com.tr";
-
       _dio!.options.connectTimeout = 100000;
       _dio!.options.receiveTimeout = 100000;
       _dio!.options.sendTimeout = 100000;

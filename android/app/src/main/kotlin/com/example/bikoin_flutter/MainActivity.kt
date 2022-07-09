@@ -1,4 +1,4 @@
-package com.example.bikoin_flutter
+package com.example.flutter_bloc_starter
 
 import io.flutter.embedding.android.FlutterActivity
 

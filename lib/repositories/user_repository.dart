@@ -11,8 +11,15 @@ class UserRepository {
     if (_user != null) return _user;
     return Future.delayed(
       const Duration(milliseconds: 300),
-      () => _user =  const User(id: Uuid(), name: "Ali Çağatay", surname: "Ün", mail: "acagatayu@gmail.com", password: "123", phoneNumber: "05535977731", status: 0, mode: 0),
-
+      () => _user = const User(
+          id: Uuid(),
+          name: "Serdar",
+          surname: "Yıldız",
+          mail: "serdaryildiz43@hotmail.com",
+          password: "123",
+          phoneNumber: "05",
+          status: 0,
+          mode: 0),
     );
   }
 }
